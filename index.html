@@ -1,0 +1,1525 @@
+İleti dizisi açıldı. 2 ileti. 1 ileti okunmadı.
+
+İçeriğe atla
+Gmail ürününü ekran okuyucularla birlikte kullanma
+9 ileti dizisinden 1.
+oyunaa
+Gelen Kutusu
+
+Eymen <eymenbaskal98@gmail.com>
+Ekler
+21:26 (14 dakika önce)
+Alıcı: alperengolge3@gmail.com
+
+bunu gemini yap
+
+ Bir ek
+  •  Gmail tarafından tarandı
+
+Alperen Gölge
+21:37 (2 dakika önce)
+Alıcı: ben
+
+
+İleti dizisi açıldı. 1 okunmuş ileti.
+
+İçeriğe atla
+Gmail ürününü ekran okuyucularla birlikte kullanma
+
+253 ileti dizisinden 2.
+
+oyunaa
+Gelen Kutusu
+
+Eymen <eymenbaskal98@gmail.com>
+Ekler
+21:26 (10 dakika önce)
+
+
+
+Alıcı: ben
+
+bunu gemini yap
+
+Bir ek
+  •  Gmail tarafından tarandı
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oyuna - 100 Oyunluk Site v2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #0f0f1a;
+      color: white;
+    }
+    header {
+      background-color: #1a1a2e;
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+    .controls {
+      text-align: center;
+      padding: 15px;
+      background-color: #1e1e3b;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 60%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button.sound-btn {
+      background-color: #4CAF50;
+      border: none;
+      padding: 10px 16px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    button.sound-btn:hover {
+      background-color: #45a049;
+    }
+    h2 {
+      text-align: center;
+      background-color: #222247;
+      margin: 0;
+      padding: 15px;
+      font-size: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .game-card {
+      background-color: #252547;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .game-card:hover {
+      background-color: #34346b;
+      transform: scale(1.05);
+    }
+    .game-card img {
+      width: 100%;
+      height: 120px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .play-btn {
+      margin-top: 10px;
+      background-color: #4CAF50;
+      border: none;
+      padding: 8px 16px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .play-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>🎮 Oyuna - 100 Oyunluk Eğlence Sitesi v2 🎮</header>
+
+  <div class="controls">
+    <input type="text" id="searchBox" placeholder="Oyun ara... (örnek: tetris, yılan)" onkeyup="searchGames()"/>
+    <button class="sound-btn" onclick="toggleMusic()">🔊 Müzik Aç/Kapat</button>
+    <audio id="bgMusic" loop>
+      <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
+    </audio>
+  </div>
+<h2>Aksiyon Oyunları</h2>
+<div class='grid'>
+
+            <div class="game-card" data-name="yılan oyunu">
+              <img src="https://i.imgur.com/hBzC4vA.png" alt="Yılan Oyunu">
+              <h3>Yılan Oyunu</h3>
+              <button class="play-btn" onclick="window.open('https://playsnake.org/embed/', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="tetris">
+              <img src="https://i.imgur.com/d5hD7Dg.png" alt="Tetris">
+              <h3>Tetris</h3>
+              <button class="play-btn" onclick="window.open('https://tetris.com/play-tetris/embed', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="araba yarışı">
+              <img src="https://i.imgur.com/SW5RJkz.png" alt="Araba Yarışı">
+              <h3>Araba Yarışı</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=car', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="jet uçak oyunu">
+              <img src="https://i.imgur.com/CH6ECFb.png" alt="Jet Uçak Oyunu">
+              <h3>Jet Uçak Oyunu</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=jet', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="bomberman">
+              <img src="https://i.imgur.com/gZ9UqMg.png" alt="Bomberman">
+              <h3>Bomberman</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=bomber', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="ok atma">
+              <img src="https://i.imgur.com/SaL5CzT.png" alt="Ok Atma">
+              <h3>Ok Atma</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=archer', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="2048">
+              <img src="https://i.imgur.com/zC2Yy5R.png" alt="2048">
+              <h3>2048</h3>
+              <button class="play-btn" onclick="window.open('https://play2048.co/', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="futbol topu">
+              <img src="https://i.imgur.com/vXW3wd6.png" alt="Futbol Topu">
+              <h3>Futbol Topu</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=football', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="mario klonu">
+              <img src="https://i.imgur.com/1DzEdyO.png" alt="Mario Klonu">
+              <h3>Mario Klonu</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=mario', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="uzaylı avı">
+              <img src="https://i.imgur.com/9zYzq3K.png" alt="Uzaylı Avı">
+              <h3>Uzaylı Avı</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=space', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 11">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 11">
+              <h3>Oyun 11</h3>
+              <button class="play-btn" onclick="alert('Oyun 11 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 12">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 12">
+              <h3>Oyun 12</h3>
+              <button class="play-btn" onclick="alert('Oyun 12 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 13">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 13">
+              <h3>Oyun 13</h3>
+              <button class="play-btn" onclick="alert('Oyun 13 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 14">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 14">
+              <h3>Oyun 14</h3>
+              <button class="play-btn" onclick="alert('Oyun 14 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 15">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 15">
+              <h3>Oyun 15</h3>
+              <button class="play-btn" onclick="alert('Oyun 15 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 16">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 16">
+              <h3>Oyun 16</h3>
+              <button class="play-btn" onclick="alert('Oyun 16 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 17">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 17">
+              <h3>Oyun 17</h3>
+              <button class="play-btn" onclick="alert('Oyun 17 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 18">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 18">
+              <h3>Oyun 18</h3>
+              <button class="play-btn" onclick="alert('Oyun 18 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 19">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 19">
+              <h3>Oyun 19</h3>
+              <button class="play-btn" onclick="alert('Oyun 19 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 20">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 20">
+              <h3>Oyun 20</h3>
+              <button class="play-btn" onclick="alert('Oyun 20 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 21">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 21">
+              <h3>Oyun 21</h3>
+              <button class="play-btn" onclick="alert('Oyun 21 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 22">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 22">
+              <h3>Oyun 22</h3>
+              <button class="play-btn" onclick="alert('Oyun 22 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 23">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 23">
+              <h3>Oyun 23</h3>
+              <button class="play-btn" onclick="alert('Oyun 23 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 24">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 24">
+              <h3>Oyun 24</h3>
+              <button class="play-btn" onclick="alert('Oyun 24 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 25">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 25">
+              <h3>Oyun 25</h3>
+              <button class="play-btn" onclick="alert('Oyun 25 yakında eklenecek!')">Oyna</button>
+            </div>
+            </div>
+<h2>Zeka Oyunları</h2>
+<div class='grid'>
+
+            <div class="game-card" data-name="oyun 26">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 26">
+              <h3>Oyun 26</h3>
+              <button class="play-btn" onclick="alert('Oyun 26 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 27">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 27">
+              <h3>Oyun 27</h3>
+              <button class="play-btn" onclick="alert('Oyun 27 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 28">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 28">
+              <h3>Oyun 28</h3>
+              <button class="play-btn" onclick="alert('Oyun 28 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 29">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 29">
+              <h3>Oyun 29</h3>
+              <button class="play-btn" onclick="alert('Oyun 29 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 30">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 30">
+              <h3>Oyun 30</h3>
+              <button class="play-btn" onclick="alert('Oyun 30 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 31">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 31">
+              <h3>Oyun 31</h3>
+              <button class="play-btn" onclick="alert('Oyun 31 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 32">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 32">
+              <h3>Oyun 32</h3>
+              <button class="play-btn" onclick="alert('Oyun 32 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 33">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 33">
+              <h3>Oyun 33</h3>
+              <button class="play-btn" onclick="alert('Oyun 33 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 34">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 34">
+              <h3>Oyun 34</h3>
+              <button class="play-btn" onclick="alert('Oyun 34 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 35">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 35">
+              <h3>Oyun 35</h3>
+              <button class="play-btn" onclick="alert('Oyun 35 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 36">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 36">
+              <h3>Oyun 36</h3>
+              <button class="play-btn" onclick="alert('Oyun 36 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 37">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 37">
+              <h3>Oyun 37</h3>
+              <button class="play-btn" onclick="alert('Oyun 37 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 38">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 38">
+              <h3>Oyun 38</h3>
+              <button class="play-btn" onclick="alert('Oyun 38 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 39">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 39">
+              <h3>Oyun 39</h3>
+              <button class="play-btn" onclick="alert('Oyun 39 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 40">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 40">
+              <h3>Oyun 40</h3>
+              <button class="play-btn" onclick="alert('Oyun 40 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 41">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 41">
+              <h3>Oyun 41</h3>
+              <button class="play-btn" onclick="alert('Oyun 41 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 42">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 42">
+              <h3>Oyun 42</h3>
+              <button class="play-btn" onclick="alert('Oyun 42 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 43">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 43">
+              <h3>Oyun 43</h3>
+              <button class="play-btn" onclick="alert('Oyun 43 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 44">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 44">
+              <h3>Oyun 44</h3>
+              <button class="play-btn" onclick="alert('Oyun 44 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 45">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 45">
+              <h3>Oyun 45</h3>
+              <button class="play-btn" onclick="alert('Oyun 45 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 46">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 46">
+              <h3>Oyun 46</h3>
+              <button class="play-btn" onclick="alert('Oyun 46 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 47">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 47">
+              <h3>Oyun 47</h3>
+              <button class="play-btn" onclick="alert('Oyun 47 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 48">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 48">
+              <h3>Oyun 48</h3>
+              <button class="play-btn" onclick="alert('Oyun 48 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 49">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 49">
+              <h3>Oyun 49</h3>
+              <button class="play-btn" onclick="alert('Oyun 49 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 50">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 50">
+              <h3>Oyun 50</h3>
+              <button class="play-btn" onclick="alert('Oyun 50 yakında eklenecek!')">Oyna</button>
+            </div>
+            </div>
+<h2>Spor Oyunları</h2>
+<div class='grid'>
+
+            <div class="game-card" data-name="oyun 51">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 51">
+              <h3>Oyun 51</h3>
+              <button class="play-btn" onclick="alert('Oyun 51 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 52">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 52">
+              <h3>Oyun 52</h3>
+              <button class="play-btn" onclick="alert('Oyun 52 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 53">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 53">
+              <h3>Oyun 53</h3>
+              <button class="play-btn" onclick="alert('Oyun 53 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 54">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 54">
+              <h3>Oyun 54</h3>
+              <button class="play-btn" onclick="alert('Oyun 54 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 55">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 55">
+              <h3>Oyun 55</h3>
+              <button class="play-btn" onclick="alert('Oyun 55 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 56">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 56">
+              <h3>Oyun 56</h3>
+              <button class="play-btn" onclick="alert('Oyun 56 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 57">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 57">
+              <h3>Oyun 57</h3>
+              <button class="play-btn" onclick="alert('Oyun 57 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 58">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 58">
+              <h3>Oyun 58</h3>
+              <button class="play-btn" onclick="alert('Oyun 58 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 59">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 59">
+              <h3>Oyun 59</h3>
+              <button class="play-btn" onclick="alert('Oyun 59 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 60">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 60">
+              <h3>Oyun 60</h3>
+              <button class="play-btn" onclick="alert('Oyun 60 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 61">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 61">
+              <h3>Oyun 61</h3>
+              <button class="play-btn" onclick="alert('Oyun 61 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 62">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 62">
+              <h3>Oyun 62</h3>
+              <button class="play-btn" onclick="alert('Oyun 62 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 63">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 63">
+              <h3>Oyun 63</h3>
+              <button class="play-btn" onclick="alert('Oyun 63 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 64">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 64">
+              <h3>Oyun 64</h3>
+              <button class="play-btn" onclick="alert('Oyun 64 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 65">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 65">
+              <h3>Oyun 65</h3>
+              <button class="play-btn" onclick="alert('Oyun 65 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 66">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 66">
+              <h3>Oyun 66</h3>
+              <button class="play-btn" onclick="alert('Oyun 66 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 67">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 67">
+              <h3>Oyun 67</h3>
+              <button class="play-btn" onclick="alert('Oyun 67 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 68">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 68">
+              <h3>Oyun 68</h3>
+              <button class="play-btn" onclick="alert('Oyun 68 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 69">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 69">
+              <h3>Oyun 69</h3>
+              <button class="play-btn" onclick="alert('Oyun 69 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 70">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 70">
+              <h3>Oyun 70</h3>
+              <button class="play-btn" onclick="alert('Oyun 70 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 71">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 71">
+              <h3>Oyun 71</h3>
+              <button class="play-btn" onclick="alert('Oyun 71 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 72">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 72">
+              <h3>Oyun 72</h3>
+              <button class="play-btn" onclick="alert('Oyun 72 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 73">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 73">
+              <h3>Oyun 73</h3>
+              <button class="play-btn" onclick="alert('Oyun 73 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 74">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 74">
+              <h3>Oyun 74</h3>
+              <button class="play-btn" onclick="alert('Oyun 74 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 75">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 75">
+              <h3>Oyun 75</h3>
+              <button class="play-btn" onclick="alert('Oyun 75 yakında eklenecek!')">Oyna</button>
+            </div>
+            </div>
+<h2>Klasik Oyunları</h2>
+<div class='grid'>
+
+            <div class="game-card" data-name="oyun 76">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 76">
+              <h3>Oyun 76</h3>
+              <button class="play-btn" onclick="alert('Oyun 76 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 77">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 77">
+              <h3>Oyun 77</h3>
+              <button class="play-btn" onclick="alert('Oyun 77 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 78">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 78">
+              <h3>Oyun 78</h3>
+              <button class="play-btn" onclick="alert('Oyun 78 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 79">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 79">
+              <h3>Oyun 79</h3>
+              <button class="play-btn" onclick="alert('Oyun 79 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 80">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 80">
+              <h3>Oyun 80</h3>
+              <button class="play-btn" onclick="alert('Oyun 80 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 81">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 81">
+              <h3>Oyun 81</h3>
+              <button class="play-btn" onclick="alert('Oyun 81 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 82">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 82">
+              <h3>Oyun 82</h3>
+              <button class="play-btn" onclick="alert('Oyun 82 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 83">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 83">
+              <h3>Oyun 83</h3>
+              <button class="play-btn" onclick="alert('Oyun 83 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 84">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 84">
+              <h3>Oyun 84</h3>
+              <button class="play-btn" onclick="alert('Oyun 84 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 85">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 85">
+              <h3>Oyun 85</h3>
+              <button class="play-btn" onclick="alert('Oyun 85 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 86">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 86">
+              <h3>Oyun 86</h3>
+              <button class="play-btn" onclick="alert('Oyun 86 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 87">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 87">
+              <h3>Oyun 87</h3>
+              <button class="play-btn" onclick="alert('Oyun 87 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 88">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 88">
+              <h3>Oyun 88</h3>
+              <button class="play-btn" onclick="alert('Oyun 88 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 89">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 89">
+              <h3>Oyun 89</h3>
+              <button class="play-btn" onclick="alert('Oyun 89 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 90">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 90">
+              <h3>Oyun 90</h3>
+              <button class="play-btn" onclick="alert('Oyun 90 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 91">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 91">
+              <h3>Oyun 91</h3>
+              <button class="play-btn" onclick="alert('Oyun 91 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 92">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 92">
+              <h3>Oyun 92</h3>
+              <button class="play-btn" onclick="alert('Oyun 92 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 93">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 93">
+              <h3>Oyun 93</h3>
+              <button class="play-btn" onclick="alert('Oyun 93 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 94">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 94">
+              <h3>Oyun 94</h3>
+              <button class="play-btn" onclick="alert('Oyun 94 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 95">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 95">
+              <h3>Oyun 95</h3>
+              <button class="play-btn" onclick="alert('Oyun 95 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 96">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 96">
+              <h3>Oyun 96</h3>
+              <button class="play-btn" onclick="alert('Oyun 96 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 97">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 97">
+              <h3>Oyun 97</h3>
+              <button class="play-btn" onclick="alert('Oyun 97 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 98">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 98">
+              <h3>Oyun 98</h3>
+              <button class="play-btn" onclick="alert('Oyun 98 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 99">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 99">
+              <h3>Oyun 99</h3>
+              <button class="play-btn" onclick="alert('Oyun 99 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 100">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 100">
+              <h3>Oyun 100</h3>
+              <button class="play-btn" onclick="alert('Oyun 100 yakında eklenecek!')">Oyna</button>
+            </div>
+            </div>
+
+<script>
+function searchGames() {
+  const input = document.getElementById("searchBox").value.toLowerCase();
+  const games = document.getElementsByClassName("game-card");
+  for (let game of games) {
+    const name = game.getAttribute("data-name");
+    game.style.display = name.includes(input) ? "block" : "none";
+  }
+}
+
+let musicPlaying = false;
+function toggleMusic() {
+  const music = document.getElementById("bgMusic");
+  if (musicPlaying) {
+    music.pause();
+  } else {
+    music.play();
+  }
+  musicPlaying = !musicPlaying;
+}
+</script>
+</body>
+</html>
+oyunaa.html
+oyunaa.html görüntüleniyor.
+
+Eymen <eymenbaskal98@gmail.com>, 8 Şub 2026 Paz, 21:26 tarihinde şunu yazdı:
+bunu gemini yap
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oyuna - 100 Oyunluk Site v2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #0f0f1a;
+      color: white;
+    }
+    header {
+      background-color: #1a1a2e;
+      padding: 20px;
+      text-align: center;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+    .controls {
+      text-align: center;
+      padding: 15px;
+      background-color: #1e1e3b;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 60%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button.sound-btn {
+      background-color: #4CAF50;
+      border: none;
+      padding: 10px 16px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    button.sound-btn:hover {
+      background-color: #45a049;
+    }
+    h2 {
+      text-align: center;
+      background-color: #222247;
+      margin: 0;
+      padding: 15px;
+      font-size: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .game-card {
+      background-color: #252547;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .game-card:hover {
+      background-color: #34346b;
+      transform: scale(1.05);
+    }
+    .game-card img {
+      width: 100%;
+      height: 120px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .play-btn {
+      margin-top: 10px;
+      background-color: #4CAF50;
+      border: none;
+      padding: 8px 16px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .play-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>🎮 Oyuna - 100 Oyunluk Eğlence Sitesi v2 🎮</header>
+
+  <div class="controls">
+    <input type="text" id="searchBox" placeholder="Oyun ara... (örnek: tetris, yılan)" onkeyup="searchGames()"/>
+    <button class="sound-btn" onclick="toggleMusic()">🔊 Müzik Aç/Kapat</button>
+    <audio id="bgMusic" loop>
+      <source src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg">
+    </audio>
+  </div>
+<h2>Aksiyon Oyunları</h2>
+<div class='grid'>
+
+            <div class="game-card" data-name="yılan oyunu">
+              <img src="https://i.imgur.com/hBzC4vA.png" alt="Yılan Oyunu">
+              <h3>Yılan Oyunu</h3>
+              <button class="play-btn" onclick="window.open('https://playsnake.org/embed/', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="tetris">
+              <img src="https://i.imgur.com/d5hD7Dg.png" alt="Tetris">
+              <h3>Tetris</h3>
+              <button class="play-btn" onclick="window.open('https://tetris.com/play-tetris/embed', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="araba yarışı">
+              <img src="https://i.imgur.com/SW5RJkz.png" alt="Araba Yarışı">
+              <h3>Araba Yarışı</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=car', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="jet uçak oyunu">
+              <img src="https://i.imgur.com/CH6ECFb.png" alt="Jet Uçak Oyunu">
+              <h3>Jet Uçak Oyunu</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=jet', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="bomberman">
+              <img src="https://i.imgur.com/gZ9UqMg.png" alt="Bomberman">
+              <h3>Bomberman</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=bomber', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="ok atma">
+              <img src="https://i.imgur.com/SaL5CzT.png" alt="Ok Atma">
+              <h3>Ok Atma</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=archer', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="2048">
+              <img src="https://i.imgur.com/zC2Yy5R.png" alt="2048">
+              <h3>2048</h3>
+              <button class="play-btn" onclick="window.open('https://play2048.co/', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="futbol topu">
+              <img src="https://i.imgur.com/vXW3wd6.png" alt="Futbol Topu">
+              <h3>Futbol Topu</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=football', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="mario klonu">
+              <img src="https://i.imgur.com/1DzEdyO.png" alt="Mario Klonu">
+              <h3>Mario Klonu</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=mario', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="uzaylı avı">
+              <img src="https://i.imgur.com/9zYzq3K.png" alt="Uzaylı Avı">
+              <h3>Uzaylı Avı</h3>
+              <button class="play-btn" onclick="window.open('https://funhtml5games.com?embed=space', '_blank')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 11">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 11">
+              <h3>Oyun 11</h3>
+              <button class="play-btn" onclick="alert('Oyun 11 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 12">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 12">
+              <h3>Oyun 12</h3>
+              <button class="play-btn" onclick="alert('Oyun 12 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 13">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 13">
+              <h3>Oyun 13</h3>
+              <button class="play-btn" onclick="alert('Oyun 13 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 14">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 14">
+              <h3>Oyun 14</h3>
+              <button class="play-btn" onclick="alert('Oyun 14 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 15">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 15">
+              <h3>Oyun 15</h3>
+              <button class="play-btn" onclick="alert('Oyun 15 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 16">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 16">
+              <h3>Oyun 16</h3>
+              <button class="play-btn" onclick="alert('Oyun 16 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 17">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 17">
+              <h3>Oyun 17</h3>
+              <button class="play-btn" onclick="alert('Oyun 17 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 18">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 18">
+              <h3>Oyun 18</h3>
+              <button class="play-btn" onclick="alert('Oyun 18 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 19">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 19">
+              <h3>Oyun 19</h3>
+              <button class="play-btn" onclick="alert('Oyun 19 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 20">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 20">
+              <h3>Oyun 20</h3>
+              <button class="play-btn" onclick="alert('Oyun 20 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 21">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 21">
+              <h3>Oyun 21</h3>
+              <button class="play-btn" onclick="alert('Oyun 21 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 22">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 22">
+              <h3>Oyun 22</h3>
+              <button class="play-btn" onclick="alert('Oyun 22 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 23">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 23">
+              <h3>Oyun 23</h3>
+              <button class="play-btn" onclick="alert('Oyun 23 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 24">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 24">
+              <h3>Oyun 24</h3>
+              <button class="play-btn" onclick="alert('Oyun 24 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 25">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 25">
+              <h3>Oyun 25</h3>
+              <button class="play-btn" onclick="alert('Oyun 25 yakında eklenecek!')">Oyna</button>
+            </div>
+            </div>
+<h2>Zeka Oyunları</h2>
+<div class='grid'>
+
+            <div class="game-card" data-name="oyun 26">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 26">
+              <h3>Oyun 26</h3>
+              <button class="play-btn" onclick="alert('Oyun 26 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 27">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 27">
+              <h3>Oyun 27</h3>
+              <button class="play-btn" onclick="alert('Oyun 27 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 28">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 28">
+              <h3>Oyun 28</h3>
+              <button class="play-btn" onclick="alert('Oyun 28 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 29">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 29">
+              <h3>Oyun 29</h3>
+              <button class="play-btn" onclick="alert('Oyun 29 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 30">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 30">
+              <h3>Oyun 30</h3>
+              <button class="play-btn" onclick="alert('Oyun 30 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 31">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 31">
+              <h3>Oyun 31</h3>
+              <button class="play-btn" onclick="alert('Oyun 31 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 32">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 32">
+              <h3>Oyun 32</h3>
+              <button class="play-btn" onclick="alert('Oyun 32 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 33">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 33">
+              <h3>Oyun 33</h3>
+              <button class="play-btn" onclick="alert('Oyun 33 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 34">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 34">
+              <h3>Oyun 34</h3>
+              <button class="play-btn" onclick="alert('Oyun 34 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 35">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 35">
+              <h3>Oyun 35</h3>
+              <button class="play-btn" onclick="alert('Oyun 35 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 36">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 36">
+              <h3>Oyun 36</h3>
+              <button class="play-btn" onclick="alert('Oyun 36 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 37">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 37">
+              <h3>Oyun 37</h3>
+              <button class="play-btn" onclick="alert('Oyun 37 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 38">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 38">
+              <h3>Oyun 38</h3>
+              <button class="play-btn" onclick="alert('Oyun 38 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 39">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 39">
+              <h3>Oyun 39</h3>
+              <button class="play-btn" onclick="alert('Oyun 39 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 40">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 40">
+              <h3>Oyun 40</h3>
+              <button class="play-btn" onclick="alert('Oyun 40 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 41">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 41">
+              <h3>Oyun 41</h3>
+              <button class="play-btn" onclick="alert('Oyun 41 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 42">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 42">
+              <h3>Oyun 42</h3>
+              <button class="play-btn" onclick="alert('Oyun 42 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 43">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 43">
+              <h3>Oyun 43</h3>
+              <button class="play-btn" onclick="alert('Oyun 43 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 44">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 44">
+              <h3>Oyun 44</h3>
+              <button class="play-btn" onclick="alert('Oyun 44 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 45">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 45">
+              <h3>Oyun 45</h3>
+              <button class="play-btn" onclick="alert('Oyun 45 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 46">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 46">
+              <h3>Oyun 46</h3>
+              <button class="play-btn" onclick="alert('Oyun 46 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 47">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 47">
+              <h3>Oyun 47</h3>
+              <button class="play-btn" onclick="alert('Oyun 47 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 48">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 48">
+              <h3>Oyun 48</h3>
+              <button class="play-btn" onclick="alert('Oyun 48 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 49">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 49">
+              <h3>Oyun 49</h3>
+              <button class="play-btn" onclick="alert('Oyun 49 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 50">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 50">
+              <h3>Oyun 50</h3>
+              <button class="play-btn" onclick="alert('Oyun 50 yakında eklenecek!')">Oyna</button>
+            </div>
+            </div>
+<h2>Spor Oyunları</h2>
+<div class='grid'>
+
+            <div class="game-card" data-name="oyun 51">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 51">
+              <h3>Oyun 51</h3>
+              <button class="play-btn" onclick="alert('Oyun 51 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 52">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 52">
+              <h3>Oyun 52</h3>
+              <button class="play-btn" onclick="alert('Oyun 52 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 53">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 53">
+              <h3>Oyun 53</h3>
+              <button class="play-btn" onclick="alert('Oyun 53 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 54">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 54">
+              <h3>Oyun 54</h3>
+              <button class="play-btn" onclick="alert('Oyun 54 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 55">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 55">
+              <h3>Oyun 55</h3>
+              <button class="play-btn" onclick="alert('Oyun 55 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 56">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 56">
+              <h3>Oyun 56</h3>
+              <button class="play-btn" onclick="alert('Oyun 56 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 57">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 57">
+              <h3>Oyun 57</h3>
+              <button class="play-btn" onclick="alert('Oyun 57 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 58">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 58">
+              <h3>Oyun 58</h3>
+              <button class="play-btn" onclick="alert('Oyun 58 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 59">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 59">
+              <h3>Oyun 59</h3>
+              <button class="play-btn" onclick="alert('Oyun 59 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 60">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 60">
+              <h3>Oyun 60</h3>
+              <button class="play-btn" onclick="alert('Oyun 60 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 61">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 61">
+              <h3>Oyun 61</h3>
+              <button class="play-btn" onclick="alert('Oyun 61 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 62">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 62">
+              <h3>Oyun 62</h3>
+              <button class="play-btn" onclick="alert('Oyun 62 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 63">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 63">
+              <h3>Oyun 63</h3>
+              <button class="play-btn" onclick="alert('Oyun 63 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 64">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 64">
+              <h3>Oyun 64</h3>
+              <button class="play-btn" onclick="alert('Oyun 64 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 65">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 65">
+              <h3>Oyun 65</h3>
+              <button class="play-btn" onclick="alert('Oyun 65 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 66">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 66">
+              <h3>Oyun 66</h3>
+              <button class="play-btn" onclick="alert('Oyun 66 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 67">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 67">
+              <h3>Oyun 67</h3>
+              <button class="play-btn" onclick="alert('Oyun 67 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 68">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 68">
+              <h3>Oyun 68</h3>
+              <button class="play-btn" onclick="alert('Oyun 68 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 69">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 69">
+              <h3>Oyun 69</h3>
+              <button class="play-btn" onclick="alert('Oyun 69 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 70">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 70">
+              <h3>Oyun 70</h3>
+              <button class="play-btn" onclick="alert('Oyun 70 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 71">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 71">
+              <h3>Oyun 71</h3>
+              <button class="play-btn" onclick="alert('Oyun 71 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 72">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 72">
+              <h3>Oyun 72</h3>
+              <button class="play-btn" onclick="alert('Oyun 72 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 73">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 73">
+              <h3>Oyun 73</h3>
+              <button class="play-btn" onclick="alert('Oyun 73 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 74">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 74">
+              <h3>Oyun 74</h3>
+              <button class="play-btn" onclick="alert('Oyun 74 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 75">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 75">
+              <h3>Oyun 75</h3>
+              <button class="play-btn" onclick="alert('Oyun 75 yakında eklenecek!')">Oyna</button>
+            </div>
+            </div>
+<h2>Klasik Oyunları</h2>
+<div class='grid'>
+
+            <div class="game-card" data-name="oyun 76">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 76">
+              <h3>Oyun 76</h3>
+              <button class="play-btn" onclick="alert('Oyun 76 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 77">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 77">
+              <h3>Oyun 77</h3>
+              <button class="play-btn" onclick="alert('Oyun 77 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 78">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 78">
+              <h3>Oyun 78</h3>
+              <button class="play-btn" onclick="alert('Oyun 78 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 79">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 79">
+              <h3>Oyun 79</h3>
+              <button class="play-btn" onclick="alert('Oyun 79 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 80">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 80">
+              <h3>Oyun 80</h3>
+              <button class="play-btn" onclick="alert('Oyun 80 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 81">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 81">
+              <h3>Oyun 81</h3>
+              <button class="play-btn" onclick="alert('Oyun 81 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 82">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 82">
+              <h3>Oyun 82</h3>
+              <button class="play-btn" onclick="alert('Oyun 82 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 83">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 83">
+              <h3>Oyun 83</h3>
+              <button class="play-btn" onclick="alert('Oyun 83 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 84">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 84">
+              <h3>Oyun 84</h3>
+              <button class="play-btn" onclick="alert('Oyun 84 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 85">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 85">
+              <h3>Oyun 85</h3>
+              <button class="play-btn" onclick="alert('Oyun 85 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 86">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 86">
+              <h3>Oyun 86</h3>
+              <button class="play-btn" onclick="alert('Oyun 86 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 87">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 87">
+              <h3>Oyun 87</h3>
+              <button class="play-btn" onclick="alert('Oyun 87 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 88">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 88">
+              <h3>Oyun 88</h3>
+              <button class="play-btn" onclick="alert('Oyun 88 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 89">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 89">
+              <h3>Oyun 89</h3>
+              <button class="play-btn" onclick="alert('Oyun 89 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 90">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 90">
+              <h3>Oyun 90</h3>
+              <button class="play-btn" onclick="alert('Oyun 90 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 91">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 91">
+              <h3>Oyun 91</h3>
+              <button class="play-btn" onclick="alert('Oyun 91 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 92">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 92">
+              <h3>Oyun 92</h3>
+              <button class="play-btn" onclick="alert('Oyun 92 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 93">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 93">
+              <h3>Oyun 93</h3>
+              <button class="play-btn" onclick="alert('Oyun 93 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 94">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 94">
+              <h3>Oyun 94</h3>
+              <button class="play-btn" onclick="alert('Oyun 94 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 95">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 95">
+              <h3>Oyun 95</h3>
+              <button class="play-btn" onclick="alert('Oyun 95 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 96">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 96">
+              <h3>Oyun 96</h3>
+              <button class="play-btn" onclick="alert('Oyun 96 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 97">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 97">
+              <h3>Oyun 97</h3>
+              <button class="play-btn" onclick="alert('Oyun 97 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 98">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 98">
+              <h3>Oyun 98</h3>
+              <button class="play-btn" onclick="alert('Oyun 98 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 99">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 99">
+              <h3>Oyun 99</h3>
+              <button class="play-btn" onclick="alert('Oyun 99 yakında eklenecek!')">Oyna</button>
+            </div>
+            
+            <div class="game-card" data-name="oyun 100">
+              <img src="https://i.imgur.com/vQW2pSC.png" alt="Oyun 100">
+              <h3>Oyun 100</h3>
+              <button class="play-btn" onclick="alert('Oyun 100 yakında eklenecek!')">Oyna</button>
+            </div>
+            </div>
+
+<script>
+function searchGames() {
+  const input = document.getElementById("searchBox").value.toLowerCase();
+  const games = document.getElementsByClassName("game-card");
+  for (let game of games) {
+    const name = game.getAttribute("data-name");
+    game.style.display = name.includes(input) ? "block" : "none";
+  }
+}
+
+let musicPlaying = false;
+function toggleMusic() {
+  const music = document.getElementById("bgMusic");
+  if (musicPlaying) {
+    music.pause();
+  } else {
+    music.play();
+  }
+  musicPlaying = !musicPlaying;
+}
+</script>
+</body>
+</html>
+oyunaa.html
+oyunaa.html görüntüleniyor.
